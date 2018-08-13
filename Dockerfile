@@ -37,6 +37,8 @@ VOLUME /var/lib/mysql
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
+COPY my.cnf /etc/my.cnf
+
 ENTRYPOINT ["/entrypoint.sh"]
 
 EXPOSE 3306
